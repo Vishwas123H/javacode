@@ -1,0 +1,102 @@
+Question-1  Write a program to divide, multiply, subtract and addition of two numbers
+
+code:-
+import java.util.Scanner;
+ 
+public class Exercise6 {
+ 
+ public static void main(String[] args) {
+  Scanner in = new Scanner(System.in);
+   
+  System.out.print("Input first number: ");
+  int num1 = in.nextInt();
+   
+  System.out.print("Input second number: ");
+  int num2 = in.nextInt();
+   
+ 
+  System.out.println(num1 + " + " + num2 + " = " + 
+  (num1 + num2));
+   
+  System.out.println(num1 + " - " + num2 + " = " + 
+  (num1 - num2));
+   
+  System.out.println(num1 + " x " + num2 + " = " + 
+  (num1 * num2));
+   
+  System.out.println(num1 + " / " + num2 + " = " + 
+  (num1 / num2));
+ 
+  System.out.println(num1 + " mod " + num2 + " = " + 
+  (num1 % num2));
+ }
+ 
+}
+
+Question-2 Write a program to check if a even number is palindrome or not
+
+Code:-
+// Java program to find number
+// is palindrome or not without
+// using any extra space
+class GFG
+{
+	// Function to check if the
+	// number is palindrome
+	static boolean isPalindrome(int n)
+	{
+		// if divisible by 11 then true
+		if (n % 11 == 0)
+		{
+			return true;
+		}
+	
+		// if not divisible by 11
+		return false;
+	}
+	
+	// Driver code
+	public static void main(String[] args)
+	{
+		System.out.println(isPalindrome(123321) ?
+								"Palindrome" :
+							"Not Palindrome");
+	}
+}
+
+// This code is contributed by Bilal
+
+
+Question-3 Write a program to find if numbers which are divisible by 23 between 10 to 150
+
+Code:-
+// Java program which check is a number
+// divided with every element in list
+// or not
+
+class GFG {
+
+	// Function which check is a number
+	// divided with every element in list or not
+	static boolean findNoIsDivisibleOrNot(int a[], int n)
+	{
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] % n != 0)
+				return false;
+		}
+		return true;
+	}
+
+	// driver program
+	public static void main(String[] args)
+	{
+		int a[] = {14, 12, 4, 18};
+		int n = 2;
+		if (findNoIsDivisibleOrNot(a, n))
+			System.out.println("Yes");
+		else
+			System.out.println("No");
+	}
+}
+
+// This code is contributed by Pramod Kumar
